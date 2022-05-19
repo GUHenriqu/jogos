@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+    href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Marvel studios</title>
+</head>
+<body>
+    <!--Início menu-->
+    <header id="header">
+        <a id=logo href="index.html"> <img  id="img"src="./img/ss.jpg" alt="Marvel Studios"> </img> </a>
+        
+        <nav id="nav">
+            <button>
+                <buton aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li> <a class="linkMenu" href="index.html">Home</a></li>
+                <li> <a class="linkMenu" href="pl.html">Homem de ferro</a></li>
+                <li> <a class="linkMenu" href="ll.html">Deadpool</a></li>
+                <li> <a class="linkMenu" href="ucl.html">Thor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--fim menu-->
+
+    <!--inicio carousel pagina principal-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="700">
+                <img src="https://cdn.mos.cms.futurecdn.net/kwuuHcDRxGJ8suoxvgKNsS-1200-80.jpg/" class="d-block w-100" alt="banner 1"/>
+            </div>
+            <div class="carousel-item" data-bs-interval="700">
+                <img src="https://cdn.mos.cms.futurecdn.net/kwuuHcDRxGJ8suoxvgKNsS-1200-80.jpg/" class="d-block w-100" alt="banner 2"/>
+            </div>
+            <div class="carousel-item active">
+                <img src="https://imagensemoldes.com.br/circulo-deadpool-png/" class="d-block w-100" alt="banner 3"/>
+            </div>  
+        </div>
+    </div>       
+        <button 
+            class="carousel-control-prev"
+            data-bs-target="carouselExampleInterval"
+            type="button"
+            data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">previous</span>
+        </button>
+
+        <button 
+            class="carousel-control-next"
+            data-bs-target="carouselExampleInterval"
+            type="button"
+            data-bs-slide="next">
+
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        
+        </button>
+</body> 
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</html>
