@@ -12,6 +12,7 @@ body{
     width: 85%;
 }
 header{
+    z-index: 1;
     background-color: crimson;
     height: 80px;
     position: fixed;
@@ -123,16 +124,16 @@ p{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 55px;
     font-weight: 600;
 }
 .conteudo-sobre h3 {
     color: #ffaf00;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 500;
 }
 .texto-sobre p {
-    color: rgb(255, 0, 0);
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
 }
@@ -141,7 +142,7 @@ p{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 40px 0;
+    padding: 40px;
 }
 .conteudo.info{
      display: flex;
@@ -167,13 +168,12 @@ p{
 }
 .endereco {
     padding: 40px 0;
-    background-image: url(../img/imagem-fundo-ranking.jpg);
+    background-color: #080324;
 }
 .conteudo-endereco {
     margin: 0 auto;
     max-width: 850px;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 .conteudo-endereco h2 {
     color: #ffaf00;
@@ -190,6 +190,7 @@ p{
 .texto-endereco p {
     width: auto;
     font-size: 20px;
+    color: #7811d8;
 }
 .container-mapa {
     position: relative;
@@ -197,7 +198,7 @@ p{
     width: 100%;
     padding-top: 20%;
 }
-.mapa-responsivo {
+.mapa-center {
     position: absolute;
     margin-top: 10px;
     top: 0;
@@ -207,13 +208,23 @@ p{
     width: 100%;
     height: 100%;
 }
-.mapa-fixed {
-    width: auto;
-    position: absolute;
-    top: 0px;
-    right: 20px;
-}
+.container-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 20%;
 
+}
+.video-responsivo {
+    position: absolute;
+    margin-top: 10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
 .footer {
     height: 80px;
     background-color: red;
